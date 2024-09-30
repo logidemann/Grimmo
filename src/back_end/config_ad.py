@@ -1,4 +1,4 @@
-from ldap3 import Server, Connection, ALL, NTLM, SUBTREE
+from ldap3 import Server, Connection, ALL, SUBTREE
 
 class ADConnector:
     def __init__(self, server_ip, domain, username, password, port=389):
@@ -16,18 +16,17 @@ class ADConnector:
 
     def connect(self):
         """
-        Se connecte au serveur LDAP (Active Directory) et renvoie True si la connexion réussit.
+        Se connecte au serveur LDAP (Active Directory) avec une authentification simple.
         """
         try:
             # Créer un serveur LDAP
             self.server = Server(self.server_ip, port=self.port, get_info=ALL)
 
-            # Créer une connexion avec authentification NTLM
+            # Créer une connexion avec une authentification simple
             self.connection = Connection(
                 self.server,
                 user=f"{self.username}@{self.domain}",
                 password=self.password,
-                authentication=NTLM,
                 auto_bind=True
             )
 

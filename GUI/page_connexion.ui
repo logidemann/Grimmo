@@ -111,31 +111,6 @@ border-color: rgb(0, 0, 0);</string>
 border-color: rgb(0, 0, 0);</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_6">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>10</y>
-       <width>151</width>
-       <height>101</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>111</width>
-       <height>71</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../../../resources.qrc">:/GitHub/Grimmo/GUI/images/00241_Real_Estate_logo_happy_house-04.webp</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
     <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
@@ -150,6 +125,31 @@ border-color: rgb(0, 0, 0);</string>
      </property>
      <property name="text">
       <string>Connexion</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>131</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>111</width>
+       <height>71</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>:/GitHub/Grimmo/GUI/images/00241_Real_Estate_logo_happy_house-04.webp</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
      </property>
     </widget>
    </widget>

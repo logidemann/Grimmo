@@ -63,13 +63,6 @@ class ADConnector:
             print(f"Erreur lors de la tentative de login : {e}")
             return False
 
-    def generate_password(self, length=8):
-        """
-        Génère un mot de passe temporaire aléatoire.
-        """
-        chars = string.ascii_letters + string.digits + "!@#$%^&*"
-        return ''.join(random.choice(chars) for _ in range(length))
-
     def add_user(self, prenom, nom, ou='Users', group='Agent'):
         """
         Ajoute un nouvel utilisateur avec un nom d'utilisateur généré automatiquement
@@ -81,7 +74,7 @@ class ADConnector:
             identifiant = f"{prenom[0].upper()}{nom.capitalize()}"
 
             # Générer un mot de passe temporaire
-            mot_de_passe = self.generate_password()
+            mot_de_passe = "Azerty123"
 
             # DN pour la création d'un nouvel utilisateur dans Grimmo > Users
             user_dn = f"cn={nom_complet},ou={ou},ou=Grimmo,{self.base_dn}"
@@ -89,14 +82,14 @@ class ADConnector:
             # Attributs du nouvel utilisateur
             attributes = {
                 'cn': nom_complet,
-                'sn': nom,  # Nom de famille
-                'givenName': prenom,  # Prénom
-                'userPassword': mot_de_passe,  # Mot de passe temporaire
+                'sn': nom,
+                'givenName': prenom,
+                'userPassword': mot_de_passe,
                 'objectClass': ['person', 'top', 'organizationalPerson', 'user'],
-                'sAMAccountName': identifiant,  # Identifiant généré
-                'userPrincipalName': f"{identifiant}@{self.domain}",  # UPN pour la connexion
+                'sAMAccountName': identifiant,
+                'userPrincipalName': f"{identifiant}@{self.domain}",
                 'displayName': nom_complet,
-                'userAccountControl': 514,  # Le compte est désactivé jusqu'à ce que le mot de passe soit changé
+                'userAccountControl': 514,
             }
 
             # Ajout de l'utilisateur dans l'AD

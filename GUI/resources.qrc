@@ -1,5 +1,15 @@
 <RCC>
   <qresource>
+    <file>images/logo_dashboard.png</file>
+    <file>images/logo_dashboard_gris.png</file>
+    <file>images/logo_visites_gris.png</file>
+    <file>images/logo_agenda_gris.png</file>
+    <file>images/logo_biens_gris.png</file>
+    <file>images/logo_client_gris.png</file>
+    <file>images/logo_connexion_gris.png</file>
+    <file>images/logo_parametre_gris.png</file>
+    <file>images/logo_statistique_gris.png</file>
+    <file>images/logo_compte.png</file>
     <file>images/logo_recherche.png</file>
     <file>images/logo_connxion.png</file>
     <file>images/logo_menu.png</file>

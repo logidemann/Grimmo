@@ -62,87 +62,111 @@ background-color: rgb(142, 141, 138);
     <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>150</y>
-       <width>75</width>
+       <width>91</width>
        <height>23</height>
       </rect>
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/images/logo_agenda.png</normaloff>:/images/logo_agenda.png</iconset>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_3">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>230</y>
-       <width>75</width>
+       <width>91</width>
        <height>23</height>
       </rect>
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/images/logo_biens.png</normaloff>:/images/logo_biens.png</iconset>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_4">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>270</y>
-       <width>75</width>
+       <width>91</width>
        <height>23</height>
       </rect>
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/images/logo_client.png</normaloff>:/images/logo_client.png</iconset>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_5">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>310</y>
-       <width>75</width>
+       <width>91</width>
        <height>23</height>
       </rect>
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/images/logo_statistique.png</normaloff>:/images/logo_statistique.png</iconset>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_6">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>350</y>
-       <width>75</width>
+       <width>91</width>
        <height>23</height>
       </rect>
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/images/logo_parametre.png</normaloff>:/images/logo_parametre.png</iconset>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_7">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>510</y>
-       <width>75</width>
+       <width>91</width>
        <height>23</height>
       </rect>
      </property>
      <property name="text">
       <string/>
      </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/images/logo_connxion.png</normaloff>:/images/logo_connxion.png</iconset>
+     </property>
     </widget>
     <widget class="QPushButton" name="pushButton_18">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>190</y>
-       <width>75</width>
+       <width>91</width>
        <height>23</height>
       </rect>
      </property>
@@ -167,146 +191,179 @@ background-color: rgb(142, 141, 138);
     <property name="styleSheet">
      <string notr="true">QWidget{
 background-color: rgb(142, 141, 138);
+}
+
+QPushButton{
+color:white;
+text-align:left
 }</string>
     </property>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>20</y>
-       <width>61</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>SideBar</string>
-     </property>
-    </widget>
     <widget class="QPushButton" name="pushButton_14">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>310</y>
-       <width>75</width>
+       <width>91</width>
        <height>23</height>
       </rect>
      </property>
      <property name="text">
       <string>Statistiques</string>
      </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/images/logo_statistique.png</normaloff>:/images/logo_statistique.png</iconset>
+     </property>
     </widget>
     <widget class="QPushButton" name="pushButton_9">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>230</y>
-       <width>75</width>
+       <width>91</width>
        <height>23</height>
       </rect>
      </property>
      <property name="text">
       <string>Biens</string>
      </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/images/logo_biens.png</normaloff>:/images/logo_biens.png</iconset>
+     </property>
     </widget>
     <widget class="QPushButton" name="pushButton_12">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>190</y>
-       <width>75</width>
+       <width>91</width>
        <height>23</height>
       </rect>
      </property>
      <property name="text">
       <string>Visites</string>
      </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/images/47973.png</normaloff>:/images/47973.png</iconset>
+     </property>
     </widget>
     <widget class="QPushButton" name="pushButton_8">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>350</y>
-       <width>75</width>
+       <width>91</width>
        <height>23</height>
       </rect>
      </property>
      <property name="text">
       <string>Paramètre</string>
      </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/images/logo_parametre.png</normaloff>:/images/logo_parametre.png</iconset>
+     </property>
     </widget>
     <widget class="QPushButton" name="pushButton_10">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>270</y>
-       <width>75</width>
+       <width>91</width>
        <height>23</height>
       </rect>
      </property>
      <property name="text">
       <string>Clients</string>
      </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/images/logo_client.png</normaloff>:/images/logo_client.png</iconset>
+     </property>
     </widget>
     <widget class="QPushButton" name="pushButton_11">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>510</y>
-       <width>75</width>
+       <width>91</width>
        <height>23</height>
       </rect>
      </property>
      <property name="text">
       <string>Déconnexion</string>
      </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/images/logo_connxion.png</normaloff>:/images/logo_connxion.png</iconset>
+     </property>
     </widget>
     <widget class="QPushButton" name="pushButton_13">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>150</y>
-       <width>75</width>
+       <width>91</width>
        <height>23</height>
       </rect>
      </property>
      <property name="text">
       <string>Agenda</string>
      </property>
+     <property name="icon">
+      <iconset resource="resources.qrc">
+       <normaloff>:/images/logo_agenda.png</normaloff>:/images/logo_agenda.png</iconset>
+     </property>
     </widget>
-    <widget class="QLabel" name="label_2">
+    <widget class="QWidget" name="">
      <property name="geometry">
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>40</width>
-       <height>40</height>
+       <width>111</width>
+       <height>42</height>
       </rect>
      </property>
-     <property name="minimumSize">
-      <size>
-       <width>40</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>40</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="resources.qrc">:/images/00241_Real_Estate_logo_happy_house-04.webp</pixmap>
-     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="resources.qrc">:/images/00241_Real_Estate_logo_happy_house-04.webp</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>SideBar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </widget>
    <widget class="QWidget" name="main_menu" native="true">
@@ -324,67 +381,89 @@ background-color: rgb(142, 141, 138);
        <x>10</x>
        <y>10</y>
        <width>391</width>
-       <height>61</height>
+       <height>51</height>
       </rect>
      </property>
-     <widget class="QLineEdit" name="lineEdit">
+     <widget class="QPushButton" name="pushButton_17">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>330</x>
         <y>10</y>
-        <width>201</width>
-        <height>41</height>
+        <width>41</width>
+        <height>28</height>
        </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_15">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>20</y>
-        <width>31</width>
-        <height>23</height>
+        <y>10</y>
+        <width>32</width>
+        <height>28</height>
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/images/logo_menu.png</normaloff>:/images/logo_menu.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_17">
+     <widget class="QWidget" name="">
       <property name="geometry">
        <rect>
-        <x>350</x>
-        <y>20</y>
-        <width>31</width>
-        <height>23</height>
+        <x>90</x>
+        <y>10</y>
+        <width>216</width>
+        <height>31</height>
        </rect>
       </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_16">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>20</y>
-        <width>31</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLineEdit" name="lineEdit"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_16">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/images/logo_recherche.png</normaloff>:/images/logo_recherche.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>90</y>
+       <y>80</y>
        <width>391</width>
-       <height>451</height>
+       <height>461</height>
       </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
      </property>
      <widget class="QWidget" name="page"/>
      <widget class="QWidget" name="page_2"/>

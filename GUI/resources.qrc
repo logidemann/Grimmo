@@ -1,5 +1,13 @@
 <RCC>
   <qresource>
+    <file>images/logo_recherche.png</file>
+    <file>images/logo_connxion.png</file>
+    <file>images/logo_menu.png</file>
+    <file>images/logo_agenda.png</file>
+    <file>images/logo_biens.png</file>
+    <file>images/logo_client.png</file>
+    <file>images/logo_parametre.png</file>
+    <file>images/logo_statistique.png</file>
     <file>images/47973.png</file>
     <file>images/00241_Real_Estate_logo_happy_house-04.webp</file>
     <file>images/360_F_497086551_84R2mKshcWk3zlXlX3wEus3efxcXzNt9.webp</file>

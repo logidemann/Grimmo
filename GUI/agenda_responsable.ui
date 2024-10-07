@@ -582,7 +582,7 @@ font-weight:bold;
           <string notr="true">background-color: rgb(255, 255, 255);</string>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>5</number>
          </property>
          <widget class="QWidget" name="accueil_page">
           <widget class="QLabel" name="label_4">

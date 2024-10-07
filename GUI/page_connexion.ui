@@ -10,6 +10,12 @@
     <height>360</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
   <property name="minimumSize">
    <size>
     <width>610</width>
@@ -41,6 +47,12 @@
       <width>212</width>
       <height>282</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="focusPolicy">
      <enum>Qt::StrongFocus</enum>
@@ -134,6 +146,12 @@ border-color: rgb(0, 0, 0);</string>
       <height>61</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="font">
      <font>
       <pointsize>30</pointsize>
@@ -155,6 +173,12 @@ border-color: rgb(0, 0, 0);</string>
       <height>361</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -164,8 +188,8 @@ border-color: rgb(0, 0, 0);</string>
    </widget>
    <zorder>label</zorder>
    <zorder>label_5</zorder>
-   <zorder>label_4</zorder>
    <zorder>frame</zorder>
+   <zorder>label_4</zorder>
   </widget>
  </widget>
  <resources>

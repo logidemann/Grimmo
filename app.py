@@ -5,9 +5,10 @@ from PyQt5 import QtWidgets, uic
 from PyQt5.QtWidgets import QMessageBox
 from src.controller.login_c import LoginController
 from src.controller.property_c import PropertyController
+import GUI.resources_rc
 
 # Chemin vers les fichiers .ui
-login_ui_path = "GUI/nouvelle_page_de_connexion.ui"
+login_ui_path = "GUI/login_page.ui"
 main_ui_path = "GUI/main_application.ui"
 
 class MainApp(QtWidgets.QMainWindow):

@@ -89,7 +89,8 @@ class ADConnector:
                 'sAMAccountName': identifiant,
                 'userPrincipalName': f"{identifiant}@{self.domain}",
                 'displayName': nom_complet,
-                'userAccountControl': 514,
+                'userAccountControl': 544,
+                'pwdLastSet':0,
             }
 
             # Ajout de l'utilisateur dans l'AD
@@ -106,12 +107,6 @@ class ADConnector:
                     print(f"Utilisateur {nom_complet} ajouté au groupe {group}.")
                 else:
                     print(f"Erreur lors de l'ajout de l'utilisateur au groupe {group}: {self.connection.result['description']}")
-                
-                # Activer le compte et forcer le changement de mot de passe à la première connexion
-                self.connection.modify(user_dn, {
-                    'userAccountControl': [(MODIFY_ADD, [512])],  # Activer le compte
-                    'pwdLastSet': [(MODIFY_ADD, [0])]  # Forcer le changement de mot de passe à la première connexion
-                })
 
                 print(f"Le mot de passe temporaire pour {nom_complet} est : {mot_de_passe}")
                 return True
@@ -189,45 +184,45 @@ class ADConnector:
 
 
 # # Fichier de configuration principal
-# if __name__ == '__main__':
-#     # Paramètres du serveur AD
-#     AD_SERVER_IP = '192.168.30.46'
-#     AD_DOMAIN = 'grimmo.local'  # Domaine spécifié dans LDAP Admin
-#     AD_USERNAME = 'Administrateur'  # Utilisateur spécifié dans LDAP Admin
-#     AD_PASSWORD = 'Ad123'  # Mot de passe correct correspondant
+if __name__ == '__main__':
+    # Paramètres du serveur AD
+    AD_SERVER_IP = '192.168.30.46'
+    AD_DOMAIN = 'grimmo.local'  # Domaine spécifié dans LDAP Admin
+    AD_USERNAME = 'Administrateur'  # Utilisateur spécifié dans LDAP Admin
+    AD_PASSWORD = 'Ad123'  # Mot de passe correct correspondant
 
-#     # Créer une instance du connecteur AD
-#     ad_connector = ADConnector(AD_SERVER_IP, AD_DOMAIN, AD_USERNAME, AD_PASSWORD)
+    # Créer une instance du connecteur AD
+    ad_connector = ADConnector(AD_SERVER_IP, AD_DOMAIN, AD_USERNAME, AD_PASSWORD)
 
-#     # Se connecter à AD
-#     if ad_connector.connect():
-#         print("Connexion établie avec succès.")
+    # Se connecter à AD
+    if ad_connector.connect():
+        print("Connexion établie avec succès.")
 
-#         # Tester le login
-#         if ad_connector.login('JMoreno', 'Azerty123'):
-#             print("Login réussi.")
+        # Tester le login
+        if ad_connector.login('JMoreno', 'Azerty123'):
+            print("Login réussi.")
 
-#         # Ajouter un nouvel utilisateur
-#         if ad_connector.add_user('titi', 'koko'):
-#             print("Utilisateur ajouté avec succès.")
+        # Ajouter un nouvel utilisateur
+        if ad_connector.add_user('titi', 'koko'):
+            print("Utilisateur ajouté avec succès.")
 
-#         # Récupérer tous les utilisateurs
-#         users = ad_connector.get_all_users(max_results=10)
-#         print("Utilisateurs trouvés dans AD :")
-#         for user in users:
-#             print(user)
+        # Récupérer tous les utilisateurs
+        users = ad_connector.get_all_users(max_results=10)
+        print("Utilisateurs trouvés dans AD :")
+        for user in users:
+            print(user)
             
-#         # Supprimer un utilisateur
-#         if ad_connector.delete_user('titi', 'koko'):
-#             print("Utilisateur supprimé avec succès.")
+        # Supprimer un utilisateur
+        if ad_connector.delete_user('titi', 'koko'):
+            print("Utilisateur supprimé avec succès.")
         
-#         # Récupérer tous les utilisateurs
-#         users = ad_connector.get_all_users(max_results=10)
-#         print("Utilisateurs trouvés dans AD :")
-#         for user in users:
-#             print(user)
+        # Récupérer tous les utilisateurs
+        users = ad_connector.get_all_users(max_results=10)
+        print("Utilisateurs trouvés dans AD :")
+        for user in users:
+            print(user)
 
-#         # Déconnexion
-#         ad_connector.disconnect()
-#     else:
-#         print("Échec de la connexion.")
+        # Déconnexion
+        ad_connector.disconnect()
+    else:
+        print("Échec de la connexion.")

@@ -1,10 +1,10 @@
 from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
 import sys
-from agenda_responsable import agenda_responsable
+from main_application import main_application
 
 app = QApplication(sys.argv)
 
-window = agenda_responsable()
+window = main_application()
 
 window.show()
 app.exec()

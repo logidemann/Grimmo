@@ -1,5 +1,7 @@
 <RCC>
   <qresource>
+    <file>images/moderniser-appartement-la-maison-saint-gobain.jpg</file>
+    <file>images/téléchargement.jpg</file>
     <file>images/logo_dashboard.png</file>
     <file>images/logo_dashboard_gris.png</file>
     <file>images/logo_visites_gris.png</file>
